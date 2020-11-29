@@ -5,7 +5,6 @@ import s from './Profile.module.css';
 
 
 function Profile({ userData }) {
-    console.log(userData);
     return userData.map(({ name, tag, location, avatar, stats }) => {
         return (
             <div className={s.profile} key={name}>
